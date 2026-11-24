@@ -34,7 +34,3 @@ QPOCKET_GRID_TABLES=result/landscape_2000/tables python paper_scripts/render_fig
 ```
 
 For structural panels, place the reference PDB files in `kras_select_systems/` and the sequence definitions in `inputs/protein_sequence_summary.csv`. For Fig. 4, `QPOCKET_POCKET_DIR` selects the reconstructed pocket directory with `<PDB>/embedded_full_pocket.pdb` beneath it. The figure drivers give the filenames and relative paths for their additional panel-specific inputs.
-
-## SI contour rendering
-
-Figures S1–S5 show the interpolated surface over a rectangular PCA grid. The `fix_si.py` driver draws 28 filled contour levels and gray isolines at every fourth level. Colors are normalized within each panel. A red star marks the sample with the lowest filter energy, and the panel legend reports its value. Grid colors outside the convex hull of the sampled points represent extrapolation.
